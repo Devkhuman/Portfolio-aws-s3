@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dev Khuman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Dev Khuman</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Dev Khuman profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dev Khuman</h1>
+        <p class="section__text__p2">DevOps and Cloud Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download Resume
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/devkhuman3'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Devkhuman'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Certifications</h3>
+              <br />
+              <p>
+                1. Executive Post Graduate Certification in Cloud Computing and DevOps IIT Roorkee
+                <br />
+                Ongoing (Expected completion: [May, 2025])
+                <br /><br />
+                2. AWS Academy Graduate - AWS Academy Cloud Foundations
+                <br /><br />
+                3. AWS Academy Graduate - AWS Academy Machine Learning Foundations
+              </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <br />
+              <p>
+                Master Of Computer Application<br />(MCA)<br />MET Bandra - University Of Mumbai
+                <br /><br />
+                Bachelors in Computer Application<br />(BCA)<br />Saurashtra University Rajkot, Gujrat
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A motivated professional with a strong foundation in problem-solving and a passion for
+              technology. I thrive on tackling challenges, learning new skills, and contributing to
+              innovative solutions. With strengths in communication, critical thinking, leadership, and
+              adaptability, I’m committed to delivering impactful results and fostering continuous growth.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps and Cloud Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>AWS / Azure</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Docker</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Kubernetes</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Python</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Jenkins / Github Actions</h3></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps and Cloud Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Git - Github</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Shell Scripting</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQL/PostgreSQL</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>HTML</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>CSS</h3></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Node.js Application with CI/CD Pipeline (Docker & Kubernetes)</h2>
+            <p><b>Technologies:</b> Node.js, Docker, Kubernetes, GitHub Actions, Jest <br><br>
+              Built a Node.js app with a fully automated CI/CD pipeline using GitHub Actions for testing, Docker image creation, and deployment to Kubernetes.<br><br>
+              Utilized Jest for unit testing, Docker for containerization, and automated deployment using Kubernetes, with notifications on deployment status.
+            </p><br><br>
+            <div class="button-container">
+              <a href="https://github.com/Devkhuman/my-node-app" class="button" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Portfolio Website (AWS S3 with CI/CD via GitHub Actions)</h2>
+            <p><b>Technologies:</b>  HTML, CSS, AWS S3, GitHub Actions<br><br>
+              Developed and hosted a static portfolio website using HTML and CSS on AWS S3 with CI/CD automation via GitHub Actions.<br><br>
+              Set up workflows to run tests and deploy updates to S3, ensuring continuous integration and deployment.
+            </p><br><br>
+            <div class="button-container">
+              <a href="https://github.com/your-github-repo" class="button" target="_blank">GitHub</a>
+              <a href="https://your-live-demo-link" class="button" target="_blank">Live Demo</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Grocery Management Web Application</h2>
+            <p><b>Technologies:</b>  Python, Flask, mysql, HTML, CSS, Javascript, Bootstrap <br><br>
+              Designed and developed a web application for managing grocery store operations using Python. <br><br>
+              The application includes features like inventory management, product categorization and order processing. <br><br>
+              Utilized Flask framework for backend development, integrated SQLAlchemy for database management, 
+              and implemented RESTful APIs for seamless interaction between frontend and backend. <br><br>
+              Focused on creating a user-friendly interface and ensuring efficient data handling.<br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:devjkhuman17@gmail.com">devjkhuman17@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p>+91 95104 62491</p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/devkhuman3">LinkedIn</a></p>
+        </div>
+        <br />
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://github.com/Devkhuman">Github</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Dev Khuman. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
