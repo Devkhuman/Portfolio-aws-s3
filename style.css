@@ -453,3 +453,50 @@ footer p {
 .button:active {
   transform: scale(1); /* Reset scale on click */
 }
+
+.contact-info-upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem; /* Uniform spacing between all items */
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem; /* Add uniform spacing between icon and text */
+  margin: 0; /* Remove any extra margin */
+}
+
+.contact-info-container:last-child {
+  margin-bottom: 0; /* Ensure no additional margin for the last item */
+}
+
+.contact-info-container img {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-info-container p, 
+.contact-info-container a {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-info-container a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.contact-info-container a:hover {
+  color: #0056b3;
+}
+
